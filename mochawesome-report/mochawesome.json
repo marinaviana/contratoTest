@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2019-04-03T14:38:52.381Z",
-    "end": "2019-04-03T14:38:52.984Z",
-    "duration": 603,
+    "start": "2019-04-03T15:26:19.847Z",
+    "end": "2019-04-03T15:26:20.505Z",
+    "duration": 658,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "e7a2ddc8-342c-43d8-a4d9-fbb52640e85f",
+    "uuid": "9c9e7833-60ce-4b2c-8748-62a9e56ce287",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,7 +28,7 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "d89d2236-45ac-4871-9075-5c345980d524",
+        "uuid": "f3940397-236d-4491-b715-712b9ee79deb",
         "title": "GET /posts",
         "fullFile": "/Users/marina.viana/Documents/Projetos Test/contratoTest/test/contracts/posts.js",
         "file": "/test/contracts/posts.js",
@@ -39,7 +39,7 @@
             "title": "Deve retornar uma lista de posts",
             "fullTitle": "GET /posts Deve retornar uma lista de posts",
             "timedOut": false,
-            "duration": 595,
+            "duration": 646,
             "state": "passed",
             "speed": "fast",
             "pass": true,
@@ -48,19 +48,19 @@
             "code": "var postsList = Joi.array().items(Joi.object().keys({\n    userId: Joi.number(),\n    id: Joi.number(),\n    title: Joi.string(),\n    body: Joi.string()\n}));\nulrlBase.get(\"/posts\").expect('Content-Type', /json/).expect(200).end(function (err, res) {\n    joiAssert(res.body, postsList);\n    done(err);\n});",
             "err": {},
             "isRoot": false,
-            "uuid": "52986a81-a99d-442a-b61a-019b6d86ec0b",
+            "uuid": "a5f65d48-dac4-4c56-b837-f9749cba5676",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "52986a81-a99d-442a-b61a-019b6d86ec0b"
+          "a5f65d48-dac4-4c56-b837-f9749cba5676"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 595,
+        "duration": 646,
         "root": false,
         "rootEmpty": false,
         "_timeout": 20000
