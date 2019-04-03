@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-04-03T14:38:52.381Z",
+    "end": "2019-04-03T14:38:52.984Z",
+    "duration": 603,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e7a2ddc8-342c-43d8-a4d9-fbb52640e85f",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "d89d2236-45ac-4871-9075-5c345980d524",
+        "title": "GET /posts",
+        "fullFile": "/Users/marina.viana/Documents/Projetos Test/contratoTest/test/contracts/posts.js",
+        "file": "/test/contracts/posts.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Deve retornar uma lista de posts",
+            "fullTitle": "GET /posts Deve retornar uma lista de posts",
+            "timedOut": false,
+            "duration": 595,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "var postsList = Joi.array().items(Joi.object().keys({\n    userId: Joi.number(),\n    id: Joi.number(),\n    title: Joi.string(),\n    body: Joi.string()\n}));\nulrlBase.get(\"/posts\").expect('Content-Type', /json/).expect(200).end(function (err, res) {\n    joiAssert(res.body, postsList);\n    done(err);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "52986a81-a99d-442a-b61a-019b6d86ec0b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "52986a81-a99d-442a-b61a-019b6d86ec0b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 595,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 20000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 20000
+  },
+  "copyrightYear": 2019
+}

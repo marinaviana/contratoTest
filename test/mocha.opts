@@ -1,0 +1,5 @@
+--require test/helpers.js
+--reporter mochawesome
+--slow 5000
+--compilers js:babel-core/register
+--timeout 20000
